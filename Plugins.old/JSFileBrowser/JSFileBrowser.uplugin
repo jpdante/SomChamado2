@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "JSFileBrowser",
+	"Description": "Enables the import of JavaScript files into the Unreal editor's content folder",
+	"Category": "JavaScript",
+	"CreatedBy": "Joao Pedro Caires",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "JSFileBrowser",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
