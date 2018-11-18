@@ -1580,7 +1580,7 @@ declare class Texture extends UObject {
 	CompressionSettings: TextureCompressionSettings;
 	Filter: TextureFilter;
 	LODGroup: TextureGroup;
-	sRGB: boolean;
+	SRGB: boolean;
 	bUseLegacyGamma: boolean;
 	NeverStream: boolean;
 	bNoTiling: boolean;
@@ -14205,7 +14205,7 @@ declare class ClothCollisionPrim_SphereConnection {
 }
 
 declare class ClothCollisionPrim_Convex { 
-	Planes: Plane[];
+	planes: Plane[];
 	BoneIndex: number;
 	clone() : ClothCollisionPrim_Convex;
 	static C(Other: UObject | any): ClothCollisionPrim_Convex;
