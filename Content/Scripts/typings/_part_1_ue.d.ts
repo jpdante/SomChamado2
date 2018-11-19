@@ -2861,7 +2861,7 @@ declare class Border extends ContentWidget {
 	ContentColorAndOpacity: LinearColor;
 	ContentColorAndOpacityDelegate: UnrealEngineDelegate<() => LinearColor>;
 	Padding: Margin;
-	background: SlateBrush;
+	Background: SlateBrush;
 	BackgroundDelegate: UnrealEngineDelegate<() => SlateBrush>;
 	BrushColor: LinearColor;
 	BrushColorDelegate: UnrealEngineDelegate<() => LinearColor>;
