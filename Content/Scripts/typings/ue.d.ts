@@ -15,7 +15,7 @@ declare type EOcclusionCombineMode = 'OCM_Minimum' | 'OCM_Multiply' | 'OCM_MAX';
 declare var EOcclusionCombineMode : { OCM_Minimum:'OCM_Minimum',OCM_Multiply:'OCM_Multiply',OCM_MAX:'OCM_MAX', };
 declare class SkyLightComponent extends LightComponentBase { 
 	SourceType: ESkyLightSourceType;
-	CubeMap: TextureCube;
+	Cubemap: TextureCube;
 	SourceCubemapAngle: number;
 	CubemapResolution: number;
 	SkyDistanceThreshold: number;
@@ -3963,7 +3963,7 @@ declare class PaperTerrainMaterial extends DataAsset {
 }
 
 declare class PaperTerrainComponent extends PrimitiveComponent { 
-	TerrainMaterial: PaperTerrainMaterial;
+	terrainMaterial: PaperTerrainMaterial;
 	bClosedSpline: boolean;
 	bFilledSpline: boolean;
 	AssociatedSpline: PaperTerrainSplineComponent;
@@ -7688,7 +7688,7 @@ declare class DatasmithSceneComponentTemplate extends DatasmithObjectTemplate {
 declare class DatasmithSkyLightComponentTemplate extends DatasmithObjectTemplate { 
 	SourceType: ESkyLightSourceType;
 	CubemapResolution: number;
-	CubeMap: TextureCube;
+	Cubemap: TextureCube;
 	static Load(ResourceName: string): DatasmithSkyLightComponentTemplate;
 	static Find(Outer: UObject, ResourceName: string): DatasmithSkyLightComponentTemplate;
 	static GetDefaultObject(): DatasmithSkyLightComponentTemplate;
