@@ -2861,7 +2861,7 @@ declare class Border extends ContentWidget {
 	ContentColorAndOpacity: LinearColor;
 	ContentColorAndOpacityDelegate: UnrealEngineDelegate<() => LinearColor>;
 	Padding: Margin;
-	background: SlateBrush;
+	Background: SlateBrush;
 	BackgroundDelegate: UnrealEngineDelegate<() => SlateBrush>;
 	BrushColor: LinearColor;
 	BrushColorDelegate: UnrealEngineDelegate<() => LinearColor>;
@@ -12517,7 +12517,7 @@ declare var EReflectionSourceType : { CapturedScene:'CapturedScene',SpecifiedCub
 declare class ReflectionCaptureComponent extends SceneComponent { 
 	CaptureOffsetComponent: BillboardComponent;
 	ReflectionSourceType: EReflectionSourceType;
-	Cubemap: TextureCube;
+	CubeMap: TextureCube;
 	SourceCubemapAngle: number;
 	Brightness: number;
 	CaptureOffset: Vector;
