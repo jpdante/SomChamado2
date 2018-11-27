@@ -3963,7 +3963,7 @@ declare class PaperTerrainMaterial extends DataAsset {
 }
 
 declare class PaperTerrainComponent extends PrimitiveComponent { 
-	TerrainMaterial: PaperTerrainMaterial;
+	terrainMaterial: PaperTerrainMaterial;
 	bClosedSpline: boolean;
 	bFilledSpline: boolean;
 	AssociatedSpline: PaperTerrainSplineComponent;
