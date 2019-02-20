@@ -8163,6 +8163,21 @@ declare class WebSocketNetDriver extends NetDriver {
 	static C(Other: UObject | any): WebSocketNetDriver;
 }
 
+declare class AutoSizeSettings extends UObject { 
+	CommentNodePadding: Vector2D;
+	bUseRandomColor: boolean;
+	DefaultCommentColor: LinearColor;
+	bAggressivelyUseDefaultColor: boolean;
+	bMoveEmptyCommentBoxes: boolean;
+	EmptyCommentBoxSpeed: number;
+	bForceColorCommentBubbles: boolean;
+	static Load(ResourceName: string): AutoSizeSettings;
+	static Find(Outer: UObject, ResourceName: string): AutoSizeSettings;
+	static GetDefaultObject(): AutoSizeSettings;
+	static CreateDefaultSubobject(Name: string, Transient?: boolean, Required?: boolean, Abstract?: boolean): AutoSizeSettings;
+	static C(Other: UObject | any): AutoSizeSettings;
+}
+
 declare class ImgMediaSettings extends UObject { 
 	DefaultFrameRate: FrameRate;
 	CacheBehindPercentage: number;
