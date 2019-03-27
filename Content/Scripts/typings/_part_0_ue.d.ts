@@ -1580,7 +1580,7 @@ declare class Texture extends UObject {
 	CompressionSettings: TextureCompressionSettings;
 	Filter: TextureFilter;
 	LODGroup: TextureGroup;
-	SRGB: boolean;
+	sRGB: boolean;
 	bUseLegacyGamma: boolean;
 	NeverStream: boolean;
 	bNoTiling: boolean;
